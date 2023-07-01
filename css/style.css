@@ -23,7 +23,6 @@ header {
   max-width: 100%;
   background: rgba(0, 0, 0, 0.6);
   border-bottom: 2px solid #fff; 
-  contain: content;
   grid-area: header;
 }
 
@@ -45,7 +44,6 @@ header {
   list-style: none;
   text-transform: uppercase;
   display: flex;
-  
 }
 
 nav ul li a {
@@ -164,6 +162,59 @@ main {
   grid-area: main;
 }
 
+.card {
+  width: 30vw;
+}
+
+.dropdown {
+display: none;
+z-index: 1;
+height: 0;
+transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown.open {
+  height: 420px;
+  border: 2px solid white;
+}
+
+.dropdown {
+  list-style: none;
+  position: absolute;
+  right: 2rem;
+  top: 20px;
+  width: 200px;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dropdown li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid white;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.dropdown li a:hover {
+  background: rgba(191, 189, 189, 0.57);
+  border-radius: 6px;
+  transition-duration: 0.5s;
+  border: 1px solid white;
+  color: black;
+}
 
 @media(max-width: 650px) {
   .main-nav {
@@ -172,8 +223,12 @@ main {
   .fa-solid.fa-bars {
     display: inline-block;
   }
-}
+  .dropdown  {
+    display: block;
+  }
 
-.card {
-  width: 30vw;
+  .dropdown {
+    width: unset;
+    left: 1rem;
+  }
 }
