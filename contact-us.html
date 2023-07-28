@@ -59,26 +59,53 @@
     <p>If you wish to contact me, please submit your contact info!</p>
   </div>
 
-    <div class="row justify-content-center text-center d-flex align-items-center">
-      <div class="contact col-6 text-center m-0">
+  <div id="form-submitted-msg" class="mx-auto text-center mt-5 mb-5">Form successfully submitted!
+  </div>
+
+  <div class="row justify-content-center text-center d-flex align-items-center">
+
+    <div class="contact col-6 text-center m-0">
         <h3>Contact Information</h3>
 
-        <form action="/example_action.html" method="post">
+      <form id="myWebsiteForm" action="/example_action.html" method="post">
   
-        <label for="Fname">First Name: </label><br>
-        <input class="col-6" type="text" id="Fname" name="Fname"><br><br>
+        <div class="control">
+          <label for="fname">First Name: </label><br>
+          <input class="col-6" type="text" id="fname" name="fname" autocomplete="off" placeholder="Provide first name"><br>
+          <div class="error"></div><br>
+        </div>
         
-        <label for="Lname">Last Name: </label><br>
-        <input class="col-6" type="text" id="Lname" name="Lname"><br><br>
+        <div class="control">
+          <label for="lname">Last Name: </label><br>
+          <input class="col-6" type="text" id="lname" name="lname" autocomplete="off" placeholder="Provide last name"><br>
+          <div class="error"></div><br>
+        </div>
     
-        <label for="Email">Email:</label><br>
-        <input class="col-6" type="text" id="Email" name="Email"><br><br>
+        <div class="control">
+          <label for="email">Email: </label><br>
+          <input class="col-6" type="text" id="email" name="email" autocomplete="off" placeholder="Provide email"><br>
+          <div class="error"></div><br>
+        </div>
       
-        <label for="Tn">Telephone number:</label><br>
-        <input class="col-6" type="text" id="Tn" name="Tn"><br><br>
-        <input type="submit" value="Save">
-      </div>
+        <div class="control">
+          <label for="number">Phone number: </label><br>
+          <input class="col-6" type="text" id="number" name="number" autocomplete="off" placeholder="Provide phone number"><br>
+          <div class="error"></div><br>
+        </div>
+
+        <div class="control">
+          <label for="reason">Reason for contacting: </label><br>
+          <textarea class="col-6" type="text" id="reason" name="reason" autocomplete="off" placeholder="Provide a short reason"></textarea><br>
+          <div class="error"></div><br>
+        </div>
+
+        <div class="form-btns">
+          <button type="submit" class="btn btn-primary submit" disabled>SUBMIT</button>
+          <button type="reset" class="btn btn-secondary">CLEAR FORM</button>
+        </div>
+      </form>
     </div>
+  </div>
 
 
 
