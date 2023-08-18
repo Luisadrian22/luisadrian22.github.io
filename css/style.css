@@ -90,7 +90,7 @@ main {
   border-radius: 10px;
   border: 2px solid white;
 }
-/* Javascript slide in for principal, left and right*/
+/* Javascript slide in for principal page, left and right*/
 
 .right {
   transition: opacity 0.8s, transform 0.8s;
@@ -149,15 +149,6 @@ main {
   margin-top: 15px;
   border-radius: 10px;
 }
-
-
-/* .wrapper {
-  min-height: 60vh;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
-  gap: 0.8rem;
-
-} */
 
 
 footer {
@@ -259,6 +250,8 @@ transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 }
 
+/* Form, form validation, hovers on form */
+
 form {
   width: auto;
 }
@@ -304,41 +297,44 @@ textarea:focus {
   width: 40%;
   text-align: center;
   color: #fff;
-  display: none;
+  display: block;
 }
 
 .form-btns {
   width: 100%;
   gap: 1rem;
   margin-top: 1 rem;
- 
 }
 
 .form-btns > button {
   padding: 0.3rem 1.5rem;
+  border-radius: 5px;
+  border: 3px solid gray;
 }
 
-.form-btns > .submit {
-  padding-inline: 3rem;
+.form-btns .blue {
+  background-color: #0517e39b;
+  color: #fff;
 }
 
-.control.success input {
-  border-color: #09c372;
+.form-btns .blue:hover {
+  transition-duration: 0.5s;
+  background-color: #0517e3;
 }
 
-.control.error input {
-  border-color: #ff3860;
-}
-.control .error {
-  color: #ff3860;
-    font-size: 9px;
-    height: 13px;
+.form-btns .gray:hover {
+  transition-duration: 0.5s;
+  background-color: gray;
 }
 
-.control.success textarea {
-  border-color: #09c372;
+.control {
+  margin-bottom: 15px;
 }
 
-.control.error textarea {
-  border-color: #ff3860;
+
+label.error{
+  font-weight: 700;
+  display: block;
+  color: red;
+  font-size: 14px;
 }
