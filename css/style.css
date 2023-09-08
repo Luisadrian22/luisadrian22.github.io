@@ -7,8 +7,7 @@
 }
 
 body {
-  padding: 0;
-  margin: 0;
+  overflow-x: hidden;
   font-family: Roboto, sans-serif;
   background-image: url(/images/Darkbg.jpg);
   background-size: cover;
@@ -338,3 +337,79 @@ label.error{
   color: red;
   font-size: 14px;
 }
+
+/* Project 13 projets page */
+
+#bubble-list li{
+  background-color: red;
+  list-style: none;
+  float: left;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0 5px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100%;
+  line-height: 40px;
+  color: white;
+  font-family: sans-serif;
+}
+
+
+#bubbles {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.pop-bubble {
+  transform: scale(2.5);
+  transition: all 1s ease-in-out;
+  background-color: orange !important;
+}
+.sorted {
+  background-color: lime !important;
+  color: darkgreen;
+  display: none;
+}
+
+#projectOne {
+  color: #fff;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#projectOne button {
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: 2px solid black;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.googleMap{
+  max-width: fit-content;
+  padding: 10px;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+#map {
+  border-radius: 10px;
+  border: 2px solid black;
+  position: relative;
+  left: 10%;
+}
+
+.mapa{
+  text-align: center;
+  color: white;
+}
+  

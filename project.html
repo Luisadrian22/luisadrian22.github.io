@@ -52,16 +52,56 @@
       
   </header>
   
-  <div class="title mx-auto text-center mt-5 mb-5">
-    <p>Hello I'm Luis Arispe</p>
-    <h1>Software Developer</h1>
-    <p>I am a Front-end Software developer currently in training through <b>Correlation One Software Development Program</b>
-    </p>
+    <div class="title mx-auto text-center mt-5 mb-5">
+        <h1>Software Developer</h1>
+        <p>I am a Front-end Software developer currently in training through <b>Correlation One Software Development Program</b>
+        </p>
 
-<h1>Website (projects) is in maintenance, sorry for the inconvenience</h1>
-</div>
+        <h2>This page is dedicated to my latest projects, I will be adding more features and projects periodically</h2>
+    </div>
 
+    <section class="row">
+      <div id="projectOne" class="col-6 text-center m-5 mx-auto p-2">
+        <h1>Bubble Sort</h1>
+        <p>Please enter any numbers separated by comma:</p>
+        <input id="list" name="list">
+          
+          <div id="bubbles">
+            <ul id="bubble-list">
+            
+            </ul>
+          </div>
+      
+      
+            <button id="createList" onclick="uservalue()">Create list</button>
+            <button id="sortList" onclick="sortList()">Sort list</button>
+            <button id="remove-list" onclick="removeList()">Remove list</button>
+      </div>
+    </section>
 
+    <section class="googleMap mx-auto p-2">
+      <div class="mapa">
+        <h2>Google Map API</h2>
+        <p>In this map you will encounter some of the Amazon Air locations<br> You will also be able to find a route between two places or find an address!</p>
+      </div>
+        <div id="map" style="width: 600px; height: 400px; margin-bottom:5px;"></div>
+      
+          <div style="color:white;">
+              <label>Origin</label>
+              <input id="origin" type="textbox">
+              <label>Destination</label>
+              <input id="destination" type="textbox">
+              <input type="button" value="Search Route" onclick="calcRoute()">
+          </div>
+          <div style="margin:5px; color:white;">
+              <label>Looking for:</label>
+              <input id="address" type="textbox">
+              <input type="button" value="Search Address" onclick="getCoordinates()">
+          </div>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB38uwPkRB78GePvbiqGjEr5wXxcBHm3qY&callback=initMap&v=weekly"
+            defer></script>
+    </section>
 
 
 
@@ -85,7 +125,7 @@
     </map>
     &copy; 2023 My Personal Website. All rights reserved.
   </footer>
-  <script>alert("Hello user, this webpage is functional but, it does not have any relevant information")</script>
+  
     <script src="path/to/bootstrap.min.js"></script>
 </body>
 </html>
